@@ -1,5 +1,4 @@
-
-
+/* Крок 1. Глобальне скидання та модель border-box */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,14 +17,21 @@ body {
     background-attachment: fixed;
 }
 
+/* Крок 3.1. Контейнер-обгортка (.container) */
 .container {
     max-width: 900px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Крок 3.2. Стилізація блоків-карток (.card) */
+.card {
     background-color: rgba(18, 16, 14, 0.85);
     border: 1px solid #3d3122;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9), inset 0 0 15px rgba(0, 0, 0, 0.8);
-    padding: 40px;
-    border-radius: 4px;
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
 h1, h2 {
@@ -45,8 +51,8 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-top: 35px;
+    font-size: 1.4rem;
+    margin-top: 10px;
     margin-bottom: 18px;
     border-bottom: 1px dashed #3d3122;
     padding-bottom: 8px;
@@ -54,15 +60,16 @@ h2 {
 
 .main-img-container {
     text-align: center;
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
+/* Крок 3.4. Головне зображення */
 .main-img {
     max-width: 100%;
     height: auto;
     border: 2px solid #4a3b2c;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
-    border-radius: 2px;
+    border-radius: 6px;
     filter: sepia(20%) contrast(110%);
     transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -90,7 +97,7 @@ em {
 
 ul, ol {
     margin-left: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 li {
@@ -108,10 +115,11 @@ ol li::marker {
     font-weight: bold;
 }
 
+/* Крок 3.3. Стилізація таблиці (table) */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 20px 0;
     background-color: #141210;
     border: 1px solid #3d3122;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -153,12 +161,13 @@ a:hover {
     text-shadow: 0 0 8px rgba(229, 152, 83, 0.6);
 }
 
+/* Крок 3.4. Галерея зображень */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .gallery img {
@@ -169,7 +178,7 @@ a:hover {
     border: 1px solid #3d3122;
     filter: grayscale(40%) sepia(20%);
     transition: all 0.3s ease;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .gallery img:hover {
@@ -179,8 +188,9 @@ a:hover {
     box-shadow: 0 5px 15px rgba(212, 163, 89, 0.2);
 }
 
+/* Медіа-запити для мобільних */
 @media (max-width: 600px) {
-    .container {
+    .card {
         padding: 20px;
     }
     h1 {
