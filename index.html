@@ -1,114 +1,92 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Souls — Легендарна серія action/RPG | Огляд гри</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практична робота №4 - Позиціонування</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        
-        <!-- Головна картка з заголовком та вступом -->
-        <div class="card">
-            <h1>Dark Souls: Світ згасаючого вогню та невідворотної смерті</h1>
-
-            <div class="main-img-container">
-                <img class="img" 
-                     src="images.webp" 
-                     alt="Багаття — символ відпочинку та безпеки у грі Dark Souls" 
-                     width="600">
-            </div>
-
-            <p>
-                <strong>Dark Souls</strong> — це легендарна гра у жанрі action/RPG, розроблена японською студією FromSoftware під керівництвом Хидетаки Миядзаки. 
-                Вона стала відомою завдяки своєму високому рівню складності, глибокому лору та унікальній атмосфері темного фентезі.
-            </p>
-
-            <p>
-                Головна філософія гри полягає у навчанні через помилки. Кожна смерть гравця — це не просто поразка, а <em>важливий урок</em>, 
-                що наближає його до перемоги над складними босами та викликами похмурого світу Лордрану.
-            </p>
-        </div>
-
-        <!-- Картка з особливостями геймплею -->
-        <div class="card">
-            <h2>Ключові особливості геймплею</h2>
-            <p>Гравці цінують Dark Souls за цілий комплекс унікальних механік:</p>
-
-            <ul>
-                <li>Безшовний та складний дизайн світу із численними короткими шляхами (short-cuts)</li>
-                <li>Багаття (Bonfires) як єдині точки збереження та відновлення ресурсів</li>
-                <li>Унікальна система душ, які слугують одночасно валютою та досвідом</li>
-                <li>Похмурий лор, який гравець збирає самостійно через описи предметів</li>
-                <li>Незвичний мережевий режим з фантомами та знаками на землі</li>
-            </ul>
-        </div>
-
-        <!-- Картка з босами -->
-        <div class="card">
-            <h2>Топ-3 найвідоміших босів Dark Souls</h2>
-            <ol>
-                <li><strong>Орнштейн Драконоборець та Кат Смоуг</strong> — культовий подвійний бій, який перевіряє витривалість гравця.</li>
-                <li><strong>Арторіс Поглинач Безодні</strong> — трагічний лицар з надзвичайно швидким та агресивним стилем бою.</li>
-                <li><strong>Гвін, Володар Попелу</strong> — фінальний бос гри з епічним та сумним музичним супроводом.</li>
-            </ol>
-        </div>
-
-        <!-- Картка з таблицею класів -->
-        <div class="card">
-            <h2>Характеристики класичних класів на початку гри</h2>
-            <p>Порівняльна таблиця базових класів персонажів:</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Клас</th>
-                        <th>Спеціалізація</th>
-                        <th>Головна зброя</th>
-                        <th>Складність для новачків</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Лицар (Knight)</td>
-                        <td>Захист та живучість</td>
-                        <td>Меч та міцний щит</td>
-                        <td>Низька (ідеально для старту)</td>
-                    </tr>
-                    <tr>
-                        <td>Маг (Sorcerer)</td>
-                        <td>Далекий бій заклинаннями</td>
-                        <td>Посох (Staff)</td>
-                        <td>Середня</td>
-                    </tr>
-                    <tr>
-                        <td>Злиденний (Deprived)</td>
-                        <td>Повна свобода прокачування</td>
-                        <td>Дерев'яна дубина</td>
-                        <td>Висока (1 рівень без броні)</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Картка з галереєю зображень -->
-        <div class="card">
-            <h2>Галерея локацій</h2>
-            <div class="gallery">
-                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23" alt="Похмурий замок">
-                <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5" alt="Темний ліс">
-                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401" alt="Вогняний міст">
-            </div>
-        </div>
-
-        <p style="text-align: center; margin-top: 20px;">
-            Більше детальної інформації про предмети, локації та босів можно знайти на 
-            <a href="https://darksouls.fandom.com/wiki/Dark_Souls_Wiki" target="_blank" rel="noopener">Dark Souls Fandom Wiki</a>.
-        </p>
-
+  <!-- Крок 1.1: Фіксоване хедер-меню -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">WebDev<span>Pro</span></div>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Про тему</a></li>
+          <li><a href="#features" class="nav-link">Характеристики</a></li>
+          <li><a href="#gallery" class="nav-link">Галерея</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <!-- Крок 1.2 & Крок 4.2: Тематичні секції з унікальними ID та чергуванням фонів -->
+  <main>
+    
+    <!-- Секція 1 -->
+    <section id="about" class="site-section text-section">
+      <div class="section-container">
+        <h2>Про тему</h2>
+        <p>Ласкаво просимо до нашого сучасного веб-ресурсу. Цей сайт розроблено з використанням найсучасніших інструментів CSS: систем макетування Flexbox та CSS Grid. Вони дозволяють створювати гнучкі, адаптивні та естетично привабливі сторінки, які ідеально підлаштовуються під будь-які екрани пристроїв користувачів.</p>
+      </div>
+    </section>
+
+    <!-- Секція 2 & Крок 4.3: Локальне позиціонування (Бейдж) -->
+    <section id="features" class="site-section alt-bg">
+      <div class="section-container">
+        <h2>Характеристики</h2>
+        <div class="cards-container">
+          
+          <!-- Картка з Хітом (Бейдж) -->
+          <div class="feature-card">
+            <span class="badge badge-hit">ХІТ</span>
+            <h3>Швидкість</h3>
+            <p>Завдяки чистому коду та правильній оптимізації стилів, завантаження сторінок відбувається миттєво.</p>
+          </div>
+
+          <!-- Картка з Новинкою (Бейдж) -->
+          <div class="feature-card">
+            <span class="badge badge-new">НОВИНКА</span>
+            <h3>Гнучкість</h3>
+            <p>Модульна структура Grid дозволяє легко адаптувати контент під мобільні екрани.</p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Семантика</h3>
+            <p>Використання правильних тегів покращує індексацію сайту пошуковими роботами.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Секція 3 & Крок 1.3: Організація галереї для Grid -->
+    <section id="gallery" class="site-section">
+      <div class="section-container">
+        <h2>Галерея зображень</h2>
+        <div class="grid-gallery">
+          <div class="gallery-item"><img src="https://picsum.photos" alt="Image 1"></div>
+          <div class="gallery-item"><img src="https://picsum.photos" alt="Image 2"></div>
+          <div class="gallery-item"><img src="https://picsum.photos" alt="Image 3"></div>
+          <div class="gallery-item"><img src="https://picsum.photos" alt="Image 4"></div>
+          <div class="gallery-item"><img src="https://picsum.photos" alt="Image 5"></div>
+          <div class="gallery-item"><img src="https://picsum.photos" alt="Image 6"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Основи web-розробки. Усі права захищено.</p>
+  </footer>
+
+  <!-- Крок 5: Плаваюча кнопка повернення вгору -->
+  <a href="#about" class="scroll-to-top" aria-label="Вгору">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </a>
 
 </body>
 </html>
